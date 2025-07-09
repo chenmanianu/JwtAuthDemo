@@ -1,4 +1,4 @@
-# JwtAuthDemo
+
 # JwtAuthDemo (.NET 8)
 
 A minimal .NET 8 Web API project demonstrating **JWT-based authentication and authorization** using ASP.NET Core’s built-in authentication middleware. This project includes Swagger integration with JWT support.
@@ -77,21 +77,13 @@ In `Program.cs`, JWT authentication is added like this:
 builder.Services.AddAuthentication(...)
                 .AddJwtBearer(...);
 ```
-
-And middleware is registered:
-
 ```csharp
 app.UseAuthentication();
 app.UseAuthorization();
 ```
 
-## 📝 To Do
 
-- Add refresh token support
-- Connect to database for real user auth
-- Add unit tests
 
-## 📄 License
 
 This project is open-source and available under the MIT License.
 
